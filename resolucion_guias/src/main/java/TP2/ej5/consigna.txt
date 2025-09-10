@@ -1,0 +1,3 @@
+Escribir un programa que reciba como parámetro un directorio y devuelva la cantidad de líneas totales que contienen los archivos de dicho directorio.
+Para hacer esta tarea de manera paralela se pide que dicho programa genere un thread por cada archivo y que la tarea a ejecutar por dicho thread sea contar las lineas de dicho archivo o devolver 0 si el archivo era en realidad un directorio.
+Una vez que los threads han terminado sumarizar y imprimir en pantalla la cantidad total.
