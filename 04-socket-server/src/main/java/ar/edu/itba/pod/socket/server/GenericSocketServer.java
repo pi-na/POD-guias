@@ -26,7 +26,7 @@ public class GenericSocketServer implements Closeable {
         boolean loop = true;
 
         serverSocket = new ServerSocket(port);
-        clientSocket = serverSocket.accept();   // Me quedo bloqueado en accept hasta que un cliente solicite una conexio
+        clientSocket = serverSocket.accept();   // Me quedo bloqueado en accept hasta que un cliente solicite una conexion
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         String inputLine;
