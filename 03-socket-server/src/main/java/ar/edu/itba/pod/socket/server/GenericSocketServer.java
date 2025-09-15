@@ -13,7 +13,6 @@ public class GenericSocketServer implements Closeable {
     private static Logger logger = LoggerFactory.getLogger(GenericSocketServer.class);
 
     public static final int PORT = 6666;
-    private int visitCount = 0;
     private ServerSocket serverSocket;
     private Socket clientSocket;
     private PrintWriter out;
@@ -30,6 +29,7 @@ public class GenericSocketServer implements Closeable {
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         String inputLine;
+        logger.debug("visit count: {}", genericService.getVisitCount());
         while (loop && (inputLine = in.readLine()) != null) {   //readLine() es bloqueante
             /*
             * Si me envian un punto cierro el loop
@@ -39,9 +39,9 @@ public class GenericSocketServer implements Closeable {
             if (".".equals(inputLine)) {
                 loop = false;
             } else if ("1".equals(inputLine)) {
-//                ++visitCount;
                 genericService.addVisit();
             }
+            logger.debug("visit count: {}", genericService.getVisitCount());
             out.println(genericService.getVisitCount());
         }
     }

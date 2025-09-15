@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b725804-a87b-43fe-8644-7206fd800f87" name="Changes" comment="" />
+    <list default="true" id="8b725804-a87b-43fe-8644-7206fd800f87" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../04-socket-server/src/main/java/ar/edu/itba/pod/socket/server/GenericSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04-socket-server/src/main/java/ar/edu/itba/pod/socket/server/GenericSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06-grpc-project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../06-grpc-project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -83,6 +90,7 @@
       <workItem from="1756938704354" duration="3323000" />
       <workItem from="1756942051146" duration="4688000" />
       <workItem from="1757542321500" duration="2510000" />
+      <workItem from="1757790627800" duration="598000" />
     </task>
     <servers />
   </component>
